@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.73caa327.css",
-    "main.js": "/personal-portfolio/static/js/main.a76de620.js",
+    "main.css": "/personal-portfolio/static/css/main.f41a357b.css",
+    "main.js": "/personal-portfolio/static/js/main.1b1f80fc.js",
     "static/js/488.9561f9b8.chunk.js": "/personal-portfolio/static/js/488.9561f9b8.chunk.js",
+    "static/media/profile-image.jpg": "/personal-portfolio/static/media/profile-image.7ae701d4903c95bcc2f4.jpg",
+    "static/media/laptopia-preview.png": "/personal-portfolio/static/media/laptopia-preview.83c290552c612e774f09.png",
+    "static/media/Todo-list-preview.png": "/personal-portfolio/static/media/Todo-list-preview.b277f1299963aaa4330d.png",
+    "static/media/WeatherApp-preview.png": "/personal-portfolio/static/media/WeatherApp-preview.6f4c6adbd566d9525c32.png",
+    "static/media/kanban-board-preview.png": "/personal-portfolio/static/media/kanban-board-preview.1543ba7b2902cae1461b.png",
+    "static/media/logo.png": "/personal-portfolio/static/media/logo.102f9f098fb3c5366d49.png",
     "index.html": "/personal-portfolio/index.html",
-    "main.73caa327.css.map": "/personal-portfolio/static/css/main.73caa327.css.map",
-    "main.a76de620.js.map": "/personal-portfolio/static/js/main.a76de620.js.map",
+    "main.f41a357b.css.map": "/personal-portfolio/static/css/main.f41a357b.css.map",
+    "main.1b1f80fc.js.map": "/personal-portfolio/static/js/main.1b1f80fc.js.map",
     "488.9561f9b8.chunk.js.map": "/personal-portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73caa327.css",
-    "static/js/main.a76de620.js"
+    "static/css/main.f41a357b.css",
+    "static/js/main.1b1f80fc.js"
   ]
 }
