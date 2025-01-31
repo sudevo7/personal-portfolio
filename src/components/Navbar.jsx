@@ -4,6 +4,8 @@ import { FaUser, FaToolbox, FaFolder, FaComment } from 'react-icons/fa';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('about');
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,14 +16,23 @@ const Navbar = () => {
           setActiveSection(section);
         }
       }
+
+      // Hide/show navbar on scroll
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setVisible(false); // Hide on scroll down
+      } else {
+        setVisible(true); // Show on scroll up
+      }
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   return (
-    <nav className="lg:fixed lg:top-1/2 lg:right-4 lg:transform lg:-translate-y-1/2 z-50">
+    <nav className={`lg:fixed lg:top-1/2 lg:right-4 lg:transform lg:-translate-y-1/2 z-50 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="bg-gray-700 rounded-full p-2 shadow-lg flex flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4 justify-center lg:justify-start mx-auto lg:mx-0 max-w-max">
         <Link 
           to="about" 

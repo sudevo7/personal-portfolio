@@ -37,11 +37,11 @@ const Technologies = () => {
       className="p-8"
       id="technologies"
     >
-      <h2 className="text-3xl font-bold mb-8 text-gray-100">Technologies I Use</h2>
+      <h2 className="text-3xl font-bold mb-8 text-gray-100">Tools and Technologies I Use</h2>
       <p className="text-gray-300 mb-8">
-        I work with a wide range of technologies to build modern, scalable, and efficient applications. Here are some of my favorites:
+        I work with a wide range of tools and technologies to build modern, scalable, and efficient applications. Here are some of my favorites:
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
         {techStack.map((tech, i) => {
           const [isHovered, setIsHovered] = useState(false);
 

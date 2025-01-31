@@ -32,7 +32,7 @@ const ProfileCard = () => {
         </div>
 
         {/* Name */}
-        <h1 className="text-2xl lg:text-3xl font-bold text-center text-gray-100 mb-4">
+        <h1 className="text-2xl lg:text-2xl font-bold text-center text-gray-100 mb-4">
           Sudev Thapa Magar
         </h1>
 
@@ -57,13 +57,15 @@ const ProfileCard = () => {
         {/* Social Links */}
         <div className="flex justify-center space-x-4 mb-4">
           <a
-            href="https://github.com"
+            href="https://github.com/sudevo7"
+            target="_blank"
             className="p-3 bg-gray-600 rounded-full hover:bg-gray-500 transition"
           >
             <FaGithub className="text-xl lg:text-2xl text-gray-100" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/sudevo7"
+            target="_blank"
             className="p-3 bg-gray-600 rounded-full hover:bg-gray-500 transition"
           >
             <FaLinkedin className="text-xl lg:text-2xl text-gray-100" />

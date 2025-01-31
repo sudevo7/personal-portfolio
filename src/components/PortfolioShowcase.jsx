@@ -62,7 +62,7 @@ const PortfolioShowcase = () => {
       </p>
       
       <h3 className="text-2xl font-bold mb-4 text-gray-100">Projects</h3>
-      <div className="grid gap-6 md:grid-cols-2 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-8">
         {projects.map((project, i) => (
           <div
             key={i}
@@ -92,7 +92,7 @@ const PortfolioShowcase = () => {
       </div>
 
       <h3 className="text-2xl font-bold mb-4 text-gray-100">Certifications</h3>
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {certifications.map((cert, i) => (
           <div
             key={i}
