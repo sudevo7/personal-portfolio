@@ -78,7 +78,7 @@ const PortfolioShowcase = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition"
               >
                 Live Preview
               </a>
@@ -108,7 +108,7 @@ const PortfolioShowcase = () => {
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition"
               >
                 View Certification
               </a>

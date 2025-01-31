@@ -20,7 +20,7 @@ const Contact = () => {
           <input 
             type="text" 
             id="name" 
-            placeholder="John Doe" 
+            placeholder="Your name" 
             className="w-full p-3 rounded-lg bg-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
@@ -29,7 +29,7 @@ const Contact = () => {
           <input 
             type="email" 
             id="email" 
-            placeholder="johndoe@example.com" 
+            placeholder="eg. someone@example.com" 
             className="w-full p-3 rounded-lg bg-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
@@ -44,7 +44,7 @@ const Contact = () => {
         </div>
         <button 
           type="submit" 
-          className="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition"
+          className="w-full bg-gray-500 text-white p-3 rounded-lg hover:bg-gray-600 transition"
         >
           Send Message
         </button>

@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
+import React from "react";
+import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const About = () => {
   return (
@@ -20,12 +20,12 @@ const About = () => {
         <div className="text-gray-300 max-w-2xl text-lg">
           <TypeAnimation
             sequence={[
-              'I am a passionate software engineer specializing in creating intuitive and engaging user experiences.',
+              "Hi! I'm Sudev, an aspiring web developer passionate about creating visually appealing and user-friendly web applications. I love learning new technologies and bringing ideas to life through code.",
               1000, // Wait 1 second after displaying the text
             ]}
             wrapper="p"
-            cursor={false} // Remove the cursor after animation
-            speed={50} // Typing speed
+            cursor={false} 
+            speed={60} 
           />
         </div>
       </div>

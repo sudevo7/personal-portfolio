@@ -1,14 +1,32 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaPython, FaDatabase, FaJs } from "react-icons/fa";
+import html from "../icons/html.svg";
+import css from "../icons/css.svg";
+import javascript from "../icons/javascript.svg";
+import react from "../icons/react.svg";
+import tailwind from "../icons/tailwind.svg";
+import chrome from "../icons/chrome.svg";
+import mysql from "../icons/mysql.svg";
+import github from "../icons/github.svg";
+import vscode from "../icons/vscode.svg";
+import mongodb from "../icons/mongodb.svg";
+import vite from "../icons/vite.svg";
+import nextjs from "../icons/nextjs.svg";
 
 const Technologies = () => {
   const techStack = [
-    { icon: FaReact, name: "React", description: "Frontend framework", defaultColor: "text-gray-400", hoverColor: "text-blue-500" },
-    { icon: FaNodeJs, name: "Node.js", description: "Backend runtime", defaultColor: "text-gray-400", hoverColor: "text-green-500" },
-    { icon: FaPython, name: "Python", description: "General-purpose language", defaultColor: "text-gray-400", hoverColor: "text-yellow-500" },
-    { icon: FaDatabase, name: "SQL", description: "Database management", defaultColor: "text-gray-400", hoverColor: "text-purple-500" },
-    { icon: FaJs, name: "JavaScript", description: "Frontend language", defaultColor: "text-gray-400", hoverColor: "text-yellow-300" },
+    { img: html, name: "HTML", description: "Frontend markup language" },
+    { img: css, name: "CSS", description: "Frontend styling language" },
+    { img: javascript, name: "JavaScript", description: "Frontend programming language" },
+    { img: react, name: "React", description: "Frontend framework" },
+    { img: tailwind, name: "Tailwind CSS", description: "Utility-first CSS framework" },
+    { img: chrome, name: "Chrome Browser", description: "Web browser for development" },
+    { img: mysql, name: "MySQL", description: "Database management" },
+    { img: github, name: "GitHub", description: "Version control and collaboration" },
+    { img: vscode, name: "VS Code", description: "Code editor" },
+    { img: mongodb, name: "MongoDB", description: "NoSQL database" },
+    { img: vite, name: "Vite.js", description: "Frontend build tool" },
+    { img: nextjs, name: "Next.js", description: "React framework" },
   ];
 
   return (
@@ -26,7 +44,6 @@ const Technologies = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {techStack.map((tech, i) => {
           const [isHovered, setIsHovered] = useState(false);
-          const Icon = tech.icon;
 
           return (
             <motion.div
@@ -37,9 +54,11 @@ const Technologies = () => {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <div className={`text-4xl transition duration-300 ${isHovered ? tech.hoverColor : tech.defaultColor}`}>
-                <Icon />
-              </div>
+              <img
+                src={tech.img}
+                alt={tech.name}
+                className={`w-12 h-12 transition duration-300 ${isHovered ? "grayscale-0" : "grayscale"}`}
+              />
               <div>
                 <h3 className="text-xl font-bold text-gray-100">{tech.name}</h3>
                 <p className="text-gray-300">{tech.description}</p>
