@@ -21,7 +21,7 @@ const About = () => {
           <TypeAnimation
             sequence={[
               "Hi! I'm Sudev, an aspiring web developer passionate about creating visually appealing and user-friendly web applications. I love learning new technologies and bringing ideas to life through code.",
-              1000, // Wait 1 second after displaying the text
+              1000, 
             ]}
             wrapper="p"
             cursor={false} 
